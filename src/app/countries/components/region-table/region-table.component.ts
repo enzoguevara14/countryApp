@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Region } from '../../interfaces/region';
+import { Country } from '../../interfaces/country';
 
 @Component({
   selector: 'countries-region-table',
@@ -9,6 +10,6 @@ import { Region } from '../../interfaces/region';
 })
 export class RegionTableComponent {
   @Input()
-  region: Region[]=[]
+  region: Country[]=[]
 
 }

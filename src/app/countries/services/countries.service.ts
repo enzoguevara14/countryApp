@@ -37,9 +37,9 @@ export class CountriesService {
    const url = `${this.apiUrl}/name/${term}`
    return  this.getCountryRequest(url)
   }
-  searchRegion(term:string): Observable<Region[]>
+  searchRegion(term:string): Observable<Country[]>
   {
-   return  this.http.get<Region[]>(`${this.apiUrl}/region/${term}`)
+   return  this.http.get<Country[]>(`${this.apiUrl}/region/${term}`)
    .pipe(
     catchError(error=> of([]))
    );

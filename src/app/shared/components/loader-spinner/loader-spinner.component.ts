@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-loader-spinner',
+  selector: 'shared-loader-spinner',
   templateUrl: './loader-spinner.component.html',
   styleUrls: ['./loader-spinner.component.css']
 })
